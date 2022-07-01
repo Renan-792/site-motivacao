@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ovo&family=Plus+Jakarta+Sans&display=swap');
+
+
+:root {
+    --font01: verdana, geneva, tahoma, sans-serif;
+    --font_titulo: 'Ovo', serif;
+    --font_conteudo: 'Plus Jakarta Sans', sans-serif;
+
+    --corfundo: white;
+    --main: #F1FFFA;
+    --rodapé: #000501;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html,body {
+    min-height: 100vh;
+    max-width: 700vh;
+    background-color: var(--corfundo);
+    line-height: 1em;
+    font-size: 20px;
+    font-family:  'Plus Jakarta Sans', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header{
+    padding-top: 50px;
+    text-align: center;
+    background-color: #000501;
+    color: aliceblue;
+}
+header >h1 {
+    font-family: var(--font_titulo);
+    color: beige;
+    padding-bottom: 50px;
+    font-variant: small-caps  ;
+}
+section {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    padding-left: 30px;
+    line-height: 1.5em;
+}
+section > p {
+    padding-bottom: 3em;
+}
+section.imagem {
+    background-color: black;
+    background-attachment: fixed;
+    color: beige; 
+    box-shadow:  1px 3px 7px 1px black;  
+}
+section.imagem > p {
+    background-color: rgba(31, 31, 28, 0.756) ;
+    padding: 50px;
+    display: inline-block;
+    margin-right: 30px ;
+    
+}
+section.normal{
+    color: #000501;
+}
+section.normal > p {
+    margin-right: 30px ;
+}
+
+section#img1 {
+    background-image: url('../imagens/pexels-peao.jpg');
+    background-position: center ;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+    background-size: cover;
+}
+section#img2 {
+    background-image: url(../imagens/trabalho-em-equipe.jpg);
+    background-size: cover;
+    margin-bottom: 100px;
+ }
+p > cite{
+    font-family:'Ovo', serif; 
+    font-size: small;   
+}
+
+footer a {
+    color: beige;
+    text-decoration: none;
+    font-weight: bolder;
+}
+footer a:hover {
+    text-decoration: overline underline;
+}
+
+footer {
+    background-color: #000501;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
